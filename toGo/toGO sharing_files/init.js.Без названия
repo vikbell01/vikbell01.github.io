@@ -1,0 +1,11 @@
+if (typeof firebase === 'undefined') throw new Error('hosting/init-error: Firebase SDK not detected. You must include it before /__/firebase/init.js');
+firebase.initializeApp({
+  "apiKey": "AIzaSyAeJvjwreylNWw2EMdHDaEoG1kmPH9noR8",
+  "appId": "1:469733610635:web:c3a7cfc3022a08513a308e",
+  "authDomain": "togolife-1c3fb.firebaseapp.com",
+  "databaseURL": "https://togolife-1c3fb.firebaseio.com",
+  "measurementId": "G-54JNX3Y6XD",
+  "messagingSenderId": "469733610635",
+  "projectId": "togolife-1c3fb",
+  "storageBucket": "togolife-1c3fb.appspot.com"
+});

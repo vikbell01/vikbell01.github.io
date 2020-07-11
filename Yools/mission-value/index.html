@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://www.juul.ru/mission-values -->
+<html lang="ru-RU">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./mission-value_files/saved_resource.html"></iframe>
+    <link rel="dns-prefetch" href="https://f.monetate.net/">
+    <link rel="dns-prefetch" href="https://sb.monetate.net/">
+    <script type="text/javascript" src="./mission-value_files/a490711b1e"></script>
+    <script type="text/javascript" async="" src="./mission-value_files/analytics.js.Без названия"></script>
+    <script src="./mission-value_files/nr-1169.min.js.Без названия"></script>
+    <script async="" src="./mission-value_files/tag.js.Без названия"></script>
+    <script type="text/javascript" charset="UTF-8" async="" src="./mission-value_files/state.js.Без названия"></script>
+    <script type="text/javascript" async="" src="./mission-value_files/gtm.js.Без названия"></script>
+    <script type="text/javascript" async="" src="./mission-value_files/analytics.js.Без названия"></script>
+    <script type="text/javascript" async="" src="./mission-value_files/analytics.min.js.Без названия"></script>
+    <script type="text/javascript" src="./mission-value_files/custom.js.Без названия" charset="utf-8" async=""></script>
+    <script>
+        window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "beacon": "bam.nr-data.net",
+            "errorBeacon": "bam.nr-data.net",
+            "licenseKey": "a490711b1e",
+            "applicationID": "201112927",
+            "transactionName": "dgkLRhRZX1gGQBYLUEcNAEYPWFRrE1NeA0IaFQ1dEQ==",
+            "queueTime": 0,
+            "applicationTime": 94,
+            "agent": ""
+        }
+    </script>
+    <script>
+        (window.NREUM || (NREUM = {})).loader_config = {
+            licenseKey: "a490711b1e",
+            applicationID: "201112927"
+        };
+        window.NREUM || (NREUM = {}), __nr_require = function(e, n, t) {
+            function r(t) {
+                if (!n[t]) {
+                    var i = n[t] = {
+                        exports: {}
+                    };
+                    e[t][0].call(i.exports, function(n) {
+                        var i = e[t][1][n];
+                        return r(i || n)
+                    }, i, i.exports)
+                }
+                return n[t].exports
+            }
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var i = 0; i < t.length; i++) r(t[i]);
+            return r
+        }({
+            1: [function(e, n, t) {
+                function r() {}
+
+                function i(e, n, t) {
+                    return function() {
+                        return o(e, [u.now()].concat(f(arguments)), n ? null : this, t), n ? void 0 : this
+                    }
+                }
+                var o = e("handle"),
+                    a = e(4),
+                    f = e(5),
+                    c = e("ee").get("tracer"),
+                    u = e("loader"),
+                    s = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = s);
+                var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                    l = "api-",
+                    d = l + "ixn-";
+                a(p, function(e, n) {
+                    s[n] = i(l + n, !0, "api")
+                }), s.addPageAction = i(l + "addPageAction", !0), s.setCurrentRouteName = i(l + "routeName", !0), n.exports = newrelic, s.interaction = function() {
+                    return (new r).get()
+                };
+                var m = r.prototype = {
+                    createTracer: function(e, n) {
+                        var t = {},
+                            r = this,
+                            i = "function" == typeof n;
+                        return o(d + "tracer", [u.now(), e, t], r),
+                            function() {
+                                if (c.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], t), i) try {
+                                    return n.apply(this, arguments)
+                                } catch (e) {
+                                    throw c.emit("fn-err", [arguments, this, e], t), e
+                                } finally {
+                                    c.emit("fn-end", [u.now()], t)
+                                }
+                            }
+                    }
+                };
+                a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(e, n) {
+                    m[n] = i(d + n)
+                }), newrelic.noticeError = function(e, n) {
+                    "string" == typeof e && (e = new Error(e)), o("err", [e, u.now(), !1, n])
+                }
+            }, {}],
+            2: [function(e, n, t) {
+                function r(e, n) {
+                    var t = e.getEntries();
+                    t.forEach(function(e) {
+                        "first-paint" === e.name ? c("timing", ["fp", Math.floor(e.startTime)]) : "first-contentful-paint" === e.name && c("timing", ["fcp", Math.floor(e.startTime)])
+                    })
+                }
+
+                function i(e, n) {
+                    var t = e.getEntries();
+                    t.length > 0 && c("lcp", [t[t.length - 1]])
+                }
+
+                function o(e) {
+                    if (e instanceof s && !l) {
+                        var n, t = Math.round(e.timeStamp);
+                        n = t > 1e12 ? Date.now() - t : u.now() - t, l = !0, c("timing", ["fi", t, {
+                            type: e.type,
+                            fid: n
+                        }])
+                    }
+                }
+                if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) {
+                    var a, f, c = e("handle"),
+                        u = e("loader"),
+                        s = NREUM.o.EV;
+                    if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+                        a = new PerformanceObserver(r), f = new PerformanceObserver(i);
+                        try {
+                            a.observe({
+                                entryTypes: ["paint"]
+                            }), f.observe({
+                                entryTypes: ["largest-contentful-paint"]
+                            })
+                        } catch (p) {}
+                    }
+                    if ("addEventListener" in document) {
+                        var l = !1,
+                            d = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+                        d.forEach(function(e) {
+                            document.addEventListener(e, o, !1)
+                        })
+                    }
+                }
+            }, {}],
+            3: [function(e, n, t) {
+                function r(e, n) {
+                    if (!i) return !1;
+                    if (e !== i) return !1;
+                    if (!n) return !0;
+                    if (!o) return !1;
+                    for (var t = o.split("."), r = n.split("."), a = 0; a < r.length; a++)
+                        if (r[a] !== t[a]) return !1;
+                    return !0
+                }
+                var i = null,
+                    o = null,
+                    a = /Version\/(\S+)\s+Safari/;
+                if (navigator.userAgent) {
+                    var f = navigator.userAgent,
+                        c = f.match(a);
+                    c && f.indexOf("Chrome") === -1 && f.indexOf("Chromium") === -1 && (i = "Safari", o = c[1])
+                }
+                n.exports = {
+                    agent: i,
+                    version: o,
+                    match: r
+                }
+            }, {}],
+            4: [function(e, n, t) {
+                function r(e, n) {
+                    var t = [],
+                        r = "",
+                        o = 0;
+                    for (r in e) i.call(e, r) && (t[o] = n(r, e[r]), o += 1);
+                    return t
+                }
+                var i = Object.prototype.hasOwnProperty;
+                n.exports = r
+            }, {}],
+            5: [function(e, n, t) {
+                function r(e, n, t) {
+                    n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0);
+                    for (var r = -1, i = t - n || 0, o = Array(i < 0 ? 0 : i); ++r < i;) o[r] = e[n + r];
+                    return o
+                }
+                n.exports = r
+            }, {}],
+            6: [function(e, n, t) {
+                n.exports = {
+                    exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart
+                }
+            }, {}],
+            ee: [function(e, n, t) {
+                function r() {}
+
+                function i(e) {
+                    function n(e) {
+                        return e && e instanceof r ? e : e ? c(e, f, o) : o()
+                    }
+
+                    function t(t, r, i, o) {
+                        if (!l.aborted || o) {
+                            e && e(t, r, i);
+                            for (var a = n(i), f = v(t), c = f.length, u = 0; u < c; u++) f[u].apply(a, r);
+                            var p = s[y[t]];
+                            return p && p.push([b, t, r, a]), a
+                        }
+                    }
+
+                    function d(e, n) {
+                        h[e] = v(e).concat(n)
+                    }
+
+                    function m(e, n) {
+                        var t = h[e];
+                        if (t)
+                            for (var r = 0; r < t.length; r++) t[r] === n && t.splice(r, 1)
+                    }
+
+                    function v(e) {
+                        return h[e] || []
+                    }
+
+                    function g(e) {
+                        return p[e] = p[e] || i(t)
+                    }
+
+                    function w(e, n) {
+                        u(e, function(e, t) {
+                            n = n || "feature", y[t] = n, n in s || (s[n] = [])
+                        })
+                    }
+                    var h = {},
+                        y = {},
+                        b = {
+                            on: d,
+                            addEventListener: d,
+                            removeEventListener: m,
+                            emit: t,
+                            get: g,
+                            listeners: v,
+                            context: n,
+                            buffer: w,
+                            abort: a,
+                            aborted: !1
+                        };
+                    return b
+                }
+
+                function o() {
+                    return new r
+                }
+
+                function a() {
+                    (s.api || s.feature) && (l.aborted = !0, s = l.backlog = {})
+                }
+                var f = "nr@context",
+                    c = e("gos"),
+                    u = e(4),
+                    s = {},
+                    p = {},
+                    l = n.exports = i();
+                l.backlog = s
+            }, {}],
+            gos: [function(e, n, t) {
+                function r(e, n, t) {
+                    if (i.call(e, n)) return e[n];
+                    var r = t();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(e, n, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (o) {}
+                    return e[n] = r, r
+                }
+                var i = Object.prototype.hasOwnProperty;
+                n.exports = r
+            }, {}],
+            handle: [function(e, n, t) {
+                function r(e, n, t, r) {
+                    i.buffer([e], r), i.emit(e, n, t)
+                }
+                var i = e("ee").get("handle");
+                n.exports = r, r.ee = i
+            }, {}],
+            id: [function(e, n, t) {
+                function r(e) {
+                    var n = typeof e;
+                    return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, o, function() {
+                        return i++
+                    })
+                }
+                var i = 1,
+                    o = "nr@id",
+                    a = e("gos");
+                n.exports = r
+            }, {}],
+            loader: [function(e, n, t) {
+                function r() {
+                    if (!x++) {
+                        var e = E.info = NREUM.info,
+                            n = d.getElementsByTagName("script")[0];
+                        if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort();
+                        u(y, function(n, t) {
+                            e[n] || (e[n] = t)
+                        }), c("mark", ["onload", a() + E.offset], null, "api");
+                        var t = d.createElement("script");
+                        t.src = "https://" + e.agent, n.parentNode.insertBefore(t, n)
+                    }
+                }
+
+                function i() {
+                    "complete" === d.readyState && o()
+                }
+
+                function o() {
+                    c("mark", ["domContent", a() + E.offset], null, "api")
+                }
+
+                function a() {
+                    return O.exists && performance.now ? Math.round(performance.now()) : (f = Math.max((new Date).getTime(), f)) - E.offset
+                }
+                var f = (new Date).getTime(),
+                    c = e("handle"),
+                    u = e(4),
+                    s = e("ee"),
+                    p = e(3),
+                    l = window,
+                    d = l.document,
+                    m = "addEventListener",
+                    v = "attachEvent",
+                    g = l.XMLHttpRequest,
+                    w = g && g.prototype;
+                NREUM.o = {
+                    ST: setTimeout,
+                    SI: l.setImmediate,
+                    CT: clearTimeout,
+                    XHR: g,
+                    REQ: l.Request,
+                    EV: l.Event,
+                    PR: l.Promise,
+                    MO: l.MutationObserver
+                };
+                var h = "" + location,
+                    y = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-1169.min.js"
+                    },
+                    b = g && w && w[m] && !/CriOS/.test(navigator.userAgent),
+                    E = n.exports = {
+                        offset: f,
+                        now: a,
+                        origin: h,
+                        features: {},
+                        xhrWrappable: b,
+                        userAgent: p
+                    };
+                e(1), e(2), d[m] ? (d[m]("DOMContentLoaded", o, !1), l[m]("load", r, !1)) : (d[v]("onreadystatechange", i), l[v]("onload", r)), c("mark", ["firstbyte", f], null, "api");
+                var x = 0,
+                    O = e(6)
+            }, {}],
+            "wrap-function": [function(e, n, t) {
+                function r(e) {
+                    return !(e && e instanceof Function && e.apply && !e[a])
+                }
+                var i = e("ee"),
+                    o = e(5),
+                    a = "nr@original",
+                    f = Object.prototype.hasOwnProperty,
+                    c = !1;
+                n.exports = function(e, n) {
+                    function t(e, n, t, i) {
+                        function nrWrapper() {
+                            var r, a, f, c;
+                            try {
+                                a = this, r = o(arguments), f = "function" == typeof t ? t(r, a) : t || {}
+                            } catch (u) {
+                                l([u, "", [r, a, i], f])
+                            }
+                            s(n + "start", [r, a, i], f);
+                            try {
+                                return c = e.apply(a, r)
+                            } catch (p) {
+                                throw s(n + "err", [r, a, p], f), p
+                            } finally {
+                                s(n + "end", [r, a, c], f)
+                            }
+                        }
+                        return r(e) ? e : (n || (n = ""), nrWrapper[a] = e, p(e, nrWrapper), nrWrapper)
+                    }
+
+                    function u(e, n, i, o) {
+                        i || (i = "");
+                        var a, f, c, u = "-" === i.charAt(0);
+                        for (c = 0; c < n.length; c++) f = n[c], a = e[f], r(a) || (e[f] = t(a, u ? f + i : i, o, f))
+                    }
+
+                    function s(t, r, i) {
+                        if (!c || n) {
+                            var o = c;
+                            c = !0;
+                            try {
+                                e.emit(t, r, i, n)
+                            } catch (a) {
+                                l([a, t, r, i])
+                            }
+                            c = o
+                        }
+                    }
+
+                    function p(e, n) {
+                        if (Object.defineProperty && Object.keys) try {
+                            var t = Object.keys(e);
+                            return t.forEach(function(t) {
+                                Object.defineProperty(n, t, {
+                                    get: function() {
+                                        return e[t]
+                                    },
+                                    set: function(n) {
+                                        return e[t] = n, n
+                                    }
+                                })
+                            }), n
+                        } catch (r) {
+                            l([r])
+                        }
+                        for (var i in e) f.call(e, i) && (n[i] = e[i]);
+                        return n
+                    }
+
+                    function l(n) {
+                        try {
+                            e.emit("internal-error", n)
+                        } catch (t) {}
+                    }
+                    return e || (e = i), t.inPlace = u, t.flag = a, t
+                }
+            }, {}]
+        }, {}, ["loader"]);
+    </script>
+    <title>
+        Миссия и ценности YOOLS | YOOLS
+    </title>
+
+    <meta name="robots" content="index">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="description" content="Наша миссия — сделать лучше жизнь миллиарда взрослых людей с табачной зависимостью. Узнайте больше о наших целях.">
+    <meta property="og:title" content="Миссия и ценности JUUL | JUUL">
+    <meta property="og:url" content="https://www.juul.ru/mission-values">
+    <meta property="og:description" content="Наша миссия — сделать лучше жизнь миллиарда взрослых людей с табачной зависимостью. Узнайте больше о наших целях.">
+    <meta property="og:image" content="https://www.juul.ru/packs/images/social/default-2849ee59.jpg">
+    <meta property="og:type" content="веб-сайт">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@JUULvapor">
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://www.schema.org",
+            "@type": "Organization",
+            "url": "https://www.juul.ru",
+            "logo": "https://www.juul.ru/assets/juul_logo-e039390832294b6a659d1ce5445bf430d65f87a30322e15f93017435288e35ab.jpg"
+        }
+    </script>
+
+
+    <link rel="alternate" href="https://www.juul.ca/en-CA/mission-values" hreflang="en-CA">
+    <link rel="alternate" href="https://www.juul.ca/fr-CA/mission-values" hreflang="fr-CA">
+    <link rel="alternate" href="https://www.juul.ru/mission-values" hreflang="ru-RU">
+    <link rel="alternate" href="https://www.juul.fr/mission-values" hreflang="fr-FR">
+    <link rel="alternate" href="https://www.juullabs.de/mission-values" hreflang="de-DE">
+    <link rel="alternate" href="https://www.juul.co.uk/mission-values" hreflang="en-GB">
+    <link rel="alternate" href="https://www.juul.ch/de-CH/mission-values" hreflang="de-CH">
+    <link rel="alternate" href="https://www.juul.ch/en-CH/mission-values" hreflang="en-CH">
+    <link rel="alternate" href="https://www.juul.ch/fr-CH/mission-values" hreflang="fr-CH">
+    <link rel="alternate" href="https://www.juul.ch/it-CH/mission-values" hreflang="it-CH">
+    <link rel="alternate" href="https://www.juul.ie/mission-values" hreflang="en-IE">
+    <link rel="alternate" href="https://www.juul.ph/mission-values" hreflang="en-PH">
+    <link rel="alternate" href="https://www.juullabs.it/mission-values" hreflang="it-IT">
+    <link rel="alternate" href="https://www.juullabs.co.kr/mission-values" hreflang="ko">
+    <link rel="alternate" href="https://www.juul.es/mission-values" hreflang="es-ES">
+    <link rel="alternate" href="https://www.juul.cz/mission-values" hreflang="cs">
+    <link rel="alternate" href="https://www.juul.id/en-ID/mission-values" hreflang="en-ID">
+    <link rel="alternate" href="https://www.juul.id/id/mission-values" hreflang="id">
+
+
+
+    <link href="https://www.juul.ru/mission-values" rel="canonical">
+
+    <script>
+        //<![CDATA[
+        window.gon = window.gon || {};
+        gon.geo_location = {
+            "city": "Moscow",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "RU",
+            "country_name": "Russia",
+            "ip": "194.186.220.0\/22",
+            "is_eu": null,
+            "latitude": 55.7527,
+            "longitude": 37.6172,
+            "state_abbr": "MOW",
+            "time_zone": "Europe\/Moscow",
+            "zip": "102325"
+        };
+        //]]>
+    </script>
+    <script>
+        //<![CDATA[
+        window.gon = window.gon || {};
+        gon.can_become_member = false;
+        gon.subscription_plan = {
+            "discount_type": null,
+            "discount_value": null
+        };
+        gon.current_order = {
+            "number": "R107431438",
+            "canceled_at": null,
+            "completed_at": null,
+            "currency": "RUB",
+            "display_item_total": "0,00 \u20bd",
+            "display_ship_total": "0,00 \u20bd",
+            "display_tax_total": "0,00 \u20bd",
+            "display_total": "0,00 \u20bd",
+            "item_total": "0.0",
+            "item_total_fractional": 0,
+            "shipment_state": null,
+            "state": "cart",
+            "subscription_id": null,
+            "total_quantity": 0,
+            "tax_total": "0.0",
+            "total_available_store_credit": "0.0",
+            "total_applicable_store_credit": "0.0",
+            "order_total_after_store_credit": "0.0",
+            "total": "0.0",
+            "shipments": [],
+            "membership_order": false,
+            "has_subscription_commitment": false,
+            "all_line_items": {
+                "amount_fractional": 0,
+                "total_fractional": 0,
+                "total_before_tax_fractional": 0
+            },
+            "coupon_code": null,
+            "coupon_codes": [],
+            "promo_total": "0.0",
+            "additional_tax_total": "0.0",
+            "shipment_total": "0.0",
+            "display_shipment_total": "0,00 \u20bd",
+            "adjustment_total": "0.0",
+            "membership_discount_total": "0",
+            "total_before_tax": "0",
+            "total_before_tax_fractional": "0",
+            "display_adjustment_total": "0,00 \u20bd",
+            "line_items": [],
+            "legacy_id": null,
+            "violations": [],
+            "payment_source_name": null
+        };
+        //]]>
+    </script>
+    <script>
+        //<![CDATA[
+        window.gon = window.gon || {};
+        gon.standardShippingCost = 700;
+        gon.products = [];
+        gon.membership_discount_rate = null;
+        gon.minimumSubscriptionItems = 2;
+        gon.maximumSubscriptionItems = 15;
+        gon.freeShippingAmount = null;
+        gon.currency = {
+            "id": "rub",
+            "alternate_symbols": ["руб.", "р."],
+            "decimal_mark": ",",
+            "disambiguate_symbol": null,
+            "html_entity": "\u0026#x20BD;",
+            "iso_code": "RUB",
+            "iso_numeric": "643",
+            "name": "Russian Ruble",
+            "priority": 100,
+            "smallest_denomination": 1,
+            "subunit": "Kopeck",
+            "subunit_to_unit": 100,
+            "symbol": "₽",
+            "symbol_first": false,
+            "thousands_separator": "."
+        };
+        gon.current_store = {
+            "id": 7,
+            "name": "Juul-RU",
+            "url": "www.juul.ru",
+            "meta_description": "",
+            "meta_keywords": "",
+            "seo_title": "",
+            "mail_from_address": "juul@example.com",
+            "default_currency": "RUB",
+            "code": "juul-ru",
+            "default": false,
+            "created_at": "2018-10-10T17:55:27.180Z",
+            "updated_at": "2020-06-30T15:57:51.024Z",
+            "cart_tax_country_iso": "RU",
+            "default_locale": "ru-RU",
+            "business": false,
+            "available_locales": ["ru-RU"],
+            "show_on_selector": true,
+            "preferences": {
+                "calculator_enabled": false,
+                "enforce_checkout_consent": false,
+                "show_retailers_support": false,
+                "check_in_store_purchases": false,
+                "show_shop": false,
+                "allow_signin": false,
+                "allow_checkout": false,
+                "enable_product_registration": false,
+                "device_web_activation_enabled": false,
+                "show_extended_warranty_form": false,
+                "show_warranty_page": false,
+                "require_device_warranty_limit": false,
+                "optional_device_warranty_limit": 2,
+                "warranty_flow_device_enabled": false,
+                "warranty_flow_pod_enabled": false,
+                "warranty_flow_accessory_enabled": false,
+                "braintree_fraud_required": false,
+                "show_address_company": false,
+                "show_address_title": false,
+                "show_included_taxes": false,
+                "show_military_address": false,
+                "show_shipping": true,
+                "show_taxes": true,
+                "show_vat_exclusive_prices": false,
+                "use_payment_last_checkout": false,
+                "allow_order_cancel": true,
+                "free_shipping_uses_total": false,
+                "show_geofencing": false,
+                "receives_geo_redirects": false,
+                "address_validation_enabled": true,
+                "address_typeahead": false,
+                "optional_adult_signature": false,
+                "adult_signature_price_in_cents": 0,
+                "enable_abandoned_cart_notifications": false,
+                "enable_incomplete_profile_notifications": false,
+                "enable_inactive_retailer_notifications": false,
+                "show_cookiebot": true,
+                "enable_store_locator": true,
+                "enable_product_catalog": false,
+                "detailed_terms_and_conditions": false,
+                "reagree_to_policy": false,
+                "show_on_global_page": true,
+                "show_nicotine_concentration": false,
+                "show_nicotine_percentage": true,
+                "show_reviews": false,
+                "show_strikethrough_prices": true,
+                "show_on_sitemap": false,
+                "show_serialized_invoice_number": false,
+                "show_organisation_tax_number_on_invoice": false,
+                "show_payment_due_date_on_invoice": false,
+                "enable_home_personalization": false,
+                "require_number_in_address_line_one": false,
+                "publish_summary_info": false,
+                "require_wholesale_price_for_excise_tax": false,
+                "enable_juul_pass": false,
+                "forget_iterable_users": false,
+                "show_gdpr_banner": false,
+                "address_field_max_length": 35,
+                "enable_loss_protection": false,
+                "enable_loss_protection_for_juul_pass_member_only": false,
+                "verified_address_states": [],
+                "enable_special_instructions": false,
+                "require_adult_signature": false,
+                "show_community": false,
+                "show_get_started": false,
+                "show_letter_link": false,
+                "show_our_mission_link": true,
+                "show_our_technology": true,
+                "show_about_us_links": true,
+                "show_refer_smoker": false,
+                "show_learn_page": false,
+                "show_navigation_links": true,
+                "show_social_links": true,
+                "show_support_chat": false,
+                "show_silver_device": false,
+                "braintree_3ds_enabled": false,
+                "braintree_automated_profile_creation": true,
+                "accepts_discover": false,
+                "accepts_amex": false,
+                "accepts_cartes_bancaires": false,
+                "show_recommit_ctas": true,
+                "show_join_us": true,
+                "show_our_responsibility": true,
+                "show_our_story": true,
+                "show_press_kit": true,
+                "show_youth_education": true,
+                "show_default_home_flash": true,
+                "show_commerce": false,
+                "address_validation_method": "easypost",
+                "hide_community": true,
+                "hide_get_started": true,
+                "hide_letter_link": true,
+                "hide_our_mission_link": false,
+                "hide_social_links": true,
+                "hide_commerce": true,
+                "hide_shop": true,
+                "hide_taxes": false,
+                "accepts_amex_discover": false,
+                "hide_intent_section": false
+            },
+            "tos_url": "https://www.juul.com.ru/legal-and-privacy",
+            "support_url": "https://support.juul.ru",
+            "cookie_policy_url": null,
+            "category": "consumer",
+            "store_locator_url": null,
+            "privacy_policy_url": "https://www.juul.ru/privacy-policy",
+            "address_validation_method": "smartystreets_country_lock",
+            "contentful_space_id": "kvgu9869fyjd",
+            "region": "europe"
+        };
+        gon.env = {
+            "RAILS_ENV": "production",
+            "RECURLY_PUBLIC_API_KEY": "ewr1-VeCoQ0Dyu6yPKt8xmCGhzP",
+            "SPLIT_IO_API_KEY": "sjopb6b9paqfm2u8hf388pklkgt00v65q434",
+            "SEGMENT_WRITE_KEY": "DCF9WTkbOn7DuRzfZo3YgdrCjNDUJEk3",
+            "JUUL_BUSINESS_GRAPHQL_API": "https:\/\/business.juul.com\/api\/graphql"
+        };
+        //]]>
+    </script>
+    <link rel="icon" type="image/png" href="https://www.juul.ru/assets/favicon-c865aa6d6549810954eb58a66779a7b3b2419babe891347969b02a3b04864d88.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.juul.ru/assets/favicons/apple-touch-icon-6fd018238946371d66494c997748df67bcf257d07de3708f5b652dc9e25b4ce1.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.juul.ru/assets/favicons/apple-touch-icon-57x57-329daff1b03307357ef2db12028df7abd2de7c5f9a80408ae3f5e3ef4495ffe6.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.juul.ru/assets/favicons/apple-touch-icon-76x76-e46aa7083bb6fb5b1db1488a7b35cad76d20b7e073064e2eff21405cb850c4ba.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.juul.ru/assets/favicons/apple-touch-icon-120x120-0aa3dd6a8853e998a6aeccf79b76690e99cda1bd6366a2f4b191d0e208667299.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.juul.ru/assets/favicons/apple-touch-icon-152x152-54abb953da1b8b36ec3f6fc14fd483461a8a3013bb9c77afb1905370994808ca.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.juul.ru/assets/favicons/apple-touch-icon-180x180-2de5b025ae8f49cdb79232aba73fc7c9f1e3de901a0178264c81d66ba0cadd91.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.juul.ru/assets/favicons/favicon-32x32-86fdaaedc04659f81a8f2747599de4c2f093771229cc3e46b7263b63b44a0224.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.juul.ru/assets/favicons/android-chrome-192x192-e746889b1b1ab46d65eada6ee4ad045fe85c21b6d4eff836ce9746690391cd9b.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.juul.ru/assets/favicons/favicon-16x16-31c7cbd7dec4211e0b13278ec17def5c624480431219a9697b071b787ffe478d.png">
+    <link rel="manifest" href="https://www.juul.ru/assets/favicons/manifest-277bac4745954cbb8a17b7c5dcaf5ac572e7c86a5a09858e6a8993fd5a064c02.json">
+    <link rel="mask-icon" href="https://www.juul.ru/assets/favicons/safari-pinned-tab-2f82f4c9b46483b2a93e25b2a1fdc2bb0ad3304e6ce80435c21abfc869dce040.svg" color="#482c2f">
+    <link rel="shortcut icon" href="https://www.juul.ru/assets/favicons/favicon-cddfc74caa627956396e72e3aa8dd790cdf3f0253f3779c8efd8dbf77bbead50.ico">
+    <meta name="application-name" content="JUUL">
+    <meta name="apple-mobile-web-app-title" content="JUUL">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig-dd0d5587b3a28e45812e1304cb6ee4e334a1743709606ae3946619dddebd8032.xml">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144-46dc3b41c3cee73be45de9e84ab4f844281e776681cb13e575951d4ac1b65e46.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="gpvgiy5QcIh884pt/rDdEuyQnGV1zDLlwTJ6V1SZb7rP7qi84EJkv4plbcX62HR56AvTGbYayzIcZwmbrfHedA==">
+
+    <link rel="preconnect" href="https://api.segment.io/">
+
+    <script>
+        (function includeAnalytics() {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize)
+                if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+                else {
+                    analytics.invoked = !0;
+                    analytics.methods = ['trackSubmit', 'trackClick', 'trackLink', 'trackForm', 'pageview', 'identify', 'reset', 'group', 'track', 'ready', 'alias', 'debug', 'page', 'once', 'off', 'on'];
+
+                    analytics.factory = function(t) {
+                        return function() {
+                            var e = Array.prototype.slice.call(arguments);
+                            e.unshift(t);
+                            analytics.push(e);
+                            return analytics;
+                        };
+                    };
+
+                    for (var t = 0; t < analytics.methods.length; t++) {
+                        var e = analytics.methods[t];
+                        analytics[e] = analytics.factory(e);
+                    }
+
+                    analytics._user = {
+                        anonymousId: function anonymousId() {
+                            return null;
+                        }
+                    };
+
+                    analytics.load = function(t, e) {
+                        var n = document.createElement('script');
+                        n.type = 'text/javascript';
+                        n.async = !0;
+                        n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                        var a = document.getElementsByTagName('script')[0];
+                        a.parentNode.insertBefore(n, a);
+                        analytics._loadOptions = e;
+                    };
+
+                    analytics.SNIPPET_VERSION = '4.1.0';
+                }
+        })();
+    </script>
+
+    <script id="Cookiebot" src="./mission-value_files/uc.js.Без названия" data-culture="RU" data-cbid="6439256b-7f5a-47d0-b014-78f1cc50efcc" type="text/javascript" async=""></script>
+
+
+
+    <script src="./mission-value_files/ru-RU-167801914aec83b13a63199d7d2f802ad007b679f66b7b839e8d4588871183fa.js.Без названия"></script>
+
+    <script src="./mission-value_files/runtime_lazysizes-af79e23e5db6bed036be.js.Без названия" defer="defer"></script>
+    <script src="./mission-value_files/lazysizes-43ae0477df16a44aa532.chunk.js.Без названия" defer="defer"></script>
+
+    <link rel="preload" href="https://www.juul.ru/packs/styles/fonts/dogpatch-0c60b2ea.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" media="all" href="./mission-value_files/20-f916d21b.chunk.css">
+    <link rel="stylesheet" media="all" href="./mission-value_files/application-a12dc29b.chunk.css">
+    <link rel="stylesheet" media="all" href="./mission-value_files/age_gate-958ff81c.chunk.css">
+
+    <script type="text/javascript" src="./mission-value_files/datadog-logs-us.js.Без названия"></script>
+    <script>
+        DD_LOGS.init({
+            clientToken: 'puba5aaa7f560b699682985d09c69c7126a',
+            forwardErrorsToLogs: true,
+        });
+        DD_LOGS.addLoggerGlobalContext('service', 'juulio-web')
+        DD_LOGS.addLoggerGlobalContext('env', 'production')
+        DD_LOGS.addLoggerGlobalContext('stack_name', 'production')
+    </script>
+
+    <script>
+        window.__BUGSNAG_CLIENT_CONFIG = {
+            apiKey: '722c44d5f81dffe07643300c3312503f',
+            releaseStage: 'production',
+            appVersion: '9cceb7f',
+            autoCaptureSessions: true,
+            user: {
+                email: "",
+                id: "ba3291a6-0662-477b-bed4-94124bd6e2ad"
+            },
+            beforeSend: function(report) {
+                if (window.FS && window.FS.getCurrentSessionURL) {
+                    report && report.updateMetaData('fullstory', 'urlAtTime', window.FS.getCurrentSessionURL(true));
+                }
+
+                if (report.errorClass === 'SyntaxError') {
+                    var warningErrorMessages = [
+                        'Unexpected end of input',
+                        'Invalid or unexpected token',
+                        'Unexpected EOF',
+                        'Unexpected end of script',
+                    ];
+
+                    if (warningErrorMessages.includes(report.errorMessage)) {
+                        report.severity = 'warning';
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <style>
+        .is-commerce {
+            display: none !important;
+        }
+    </style>
+
+
+    <!-- Begin Monetate ExpressTag Sync v8.1. Place at start of document head. DO NOT ALTER. -->
+    <script type="text/javascript">
+        var monetateT = new Date().getTime();
+    </script>
+    <script type="text/javascript" src="./mission-value_files/entry.js.Без названия"></script>
+    <!-- End Monetate tag. -->
+
+
+    <script>
+        (window.BOOMR_mq = window.BOOMR_mq || []).push(["addVar", {
+            "rua.upush": "false",
+            "rua.cpush": "false",
+            "rua.upre": "false",
+            "rua.cpre": "false",
+            "rua.uprl": "false",
+            "rua.cprl": "false",
+            "rua.cprf": "false",
+            "rua.trans": "",
+            "rua.cook": "false",
+            "rua.ims": "false",
+            "rua.ufprl": "false",
+            "rua.cfprl": "false"
+        }]);
+    </script>
+    <script>
+        ! function(a) {
+            var e = "https://s.go-mpulse.net/boomerang/",
+                t = "addEventListener";
+            if ("False" == "True") a.BOOMR_config = a.BOOMR_config || {}, a.BOOMR_config.PageParams = a.BOOMR_config.PageParams || {}, a.BOOMR_config.PageParams.pci = !0, e = "https://s2.go-mpulse.net/boomerang/";
+            if (window.BOOMR_API_key = "A7PGE-XG7QA-QPZ7H-2GHGP-H9SVF", function() {
+                    function n(e) {
+                        a.BOOMR_onload = e && e.timeStamp || (new Date).getTime()
+                    }
+                    if (!a.BOOMR || !a.BOOMR.version && !a.BOOMR.snippetExecuted) {
+                        a.BOOMR = a.BOOMR || {}, a.BOOMR.snippetExecuted = !0;
+                        var i, o, _, r = document.createElement("iframe");
+                        if (a[t]) a[t]("load", n, !1);
+                        else if (a.attachEvent) a.attachEvent("onload", n);
+                        r.src = "javascript:void(0)", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "width:0;height:0;border:0;display:none;", _ = document.getElementsByTagName("script")[0], _.parentNode.insertBefore(r, _);
+                        try {
+                            o = r.contentWindow.document
+                        } catch (O) {
+                            i = document.domain, r.src = "javascript:var d=document.open();d.domain='" + i + "';void(0);", o = r.contentWindow.document
+                        }
+                        o.open()._l = function() {
+                            var a = this.createElement("script");
+                            if (i) this.domain = i;
+                            a.id = "boomr-if-as", a.src = e + "A7PGE-XG7QA-QPZ7H-2GHGP-H9SVF", BOOMR_lstart = (new Date).getTime(), this.body.appendChild(a)
+                        }, o.write("<bo" + 'dy onload="document._l();">'), o.close()
+                    }
+                }(), "".length > 0)
+                if (a && "performance" in a && a.performance && "function" == typeof a.performance.setResourceTimingBufferSize) a.performance.setResourceTimingBufferSize();
+                ! function() {
+                if (BOOMR = a.BOOMR || {}, BOOMR.plugins = BOOMR.plugins || {}, !BOOMR.plugins.AK) {
+                    var e = "" == "true" ? 1 : 0,
+                        t = "",
+                        n = "yk5nz3qcccnbgxyjl3wq-f-a7f17f9a6-clientnsv4-s.akamaihd.net",
+                        i = {
+                            "ak.v": "27",
+                            "ak.cp": "911680",
+                            "ak.ai": parseInt("434613", 10),
+                            "ak.ol": "0",
+                            "ak.cr": 10,
+                            "ak.ipv": 4,
+                            "ak.proto": "h2",
+                            "ak.rid": "291b203",
+                            "ak.r": 20728,
+                            "ak.a2": e,
+                            "ak.m": "a",
+                            "ak.n": "essl",
+                            "ak.bpcip": "194.186.220.0",
+                            "ak.cport": 54400,
+                            "ak.gh": "2.16.154.15",
+                            "ak.quicv": "",
+                            "ak.tlsv": "tls1.3",
+                            "ak.0rtt": "",
+                            "ak.csrc": "-",
+                            "ak.acc": "",
+                            "ak.t": "1594449645",
+                            "ak.ak": "hOBiQwZUYzCg5VSAfCLimQ==9TWRmJMvCsDB7tU+hKQGBRkaeyM74jy1wnvmCVj7jtJKs/wZ1Au5JJIZM1AlcfdL9F/szknsPV7ucX+6jvaSv/XcXuqOyiG8LRUAvQ54RQdv4p7J3EmUrGlUdHaKZZ8PCLxaZS0ZM2EetJFN7Jr4lh68wYjiEJAvSTOtJOyebfR5XVSdfWpiixxL9YA+MKHs9dVQW3qVKnlNrB122fKuglz/BRoKXowJEuvX44TFRfqzkPCrYpMrLvMsfj+hj0Ak6DljD97a+TALY2rubxQnIItrsuTXjTQy7UDjM2uiZBm2LOSSEoge2RYSOzIHAPPzXAVNxdaYYRzI4VHlrw1z4Mb8+gx2hn63LCoBohIbHrVKPxwLazs5cMligwJjnROqdmukcpak39jwhB1vwhP7kaEobZqtZDzxlHCq78BslQc=",
+                            "ak.pv": "270"
+                        };
+                    if ("" !== t) i["ak.ruds"] = t;
+                    var o = {
+                        i: !1,
+                        av: function(e) {
+                            var t = "http.initiator";
+                            if (e && (!e[t] || "spa_hard" === e[t])) i["ak.feo"] = void 0 !== a.aFeoApplied ? 1 : 0, BOOMR.addVar(i)
+                        },
+                        rv: function() {
+                            var a = ["ak.bpcip", "ak.cport", "ak.cr", "ak.csrc", "ak.gh", "ak.ipv", "ak.m", "ak.n", "ak.ol", "ak.proto", "ak.quicv", "ak.tlsv", "ak.0rtt", "ak.r", "ak.acc", "ak.t"];
+                            BOOMR.removeVar(a)
+                        }
+                    };
+                    BOOMR.plugins.AK = {
+                        akVars: i,
+                        akDNSPreFetchDomain: n,
+                        init: function() {
+                            if (!o.i) {
+                                var a = BOOMR.subscribe;
+                                a("before_beacon", o.av, null, null), a("onbeacon", o.rv, null, null), o.i = !0
+                            }
+                            return this
+                        },
+                        is_complete: function() {
+                            return !0
+                        }
+                    }
+                }
+            }()
+        }(window);
+    </script>
+    <link rel="prefetch">
+    <script type="text/javascript" src="./mission-value_files/317900378-0" charset="utf-8" async=""></script>
+    <script type="text/javascript" src="./mission-value_files/317900378-1" charset="utf-8" async=""></script>
+    <style>
+        ._3emE9--dark-theme .-S-tR--ff-downloader {
+            background: rgba(30, 30, 30, .93);
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #fff
+        }
+        
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            background: #3d4b52
+        }
+        
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #131415
+        }
+        
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: rgba(30, 30, 30, .93)
+        }
+        
+        ._2mDEx--white-theme .-S-tR--ff-downloader {
+            background: #fff;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #314c75
+        }
+        
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header {
+            font-weight: 700
+        }
+        
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            border: 0;
+            color: rgba(0, 0, 0, .88)
+        }
+        
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: #fff
+        }
+        
+        .-S-tR--ff-downloader {
+            display: block;
+            overflow: hidden;
+            position: fixed;
+            bottom: 20px;
+            right: 7.1%;
+            width: 330px;
+            height: 180px;
+            background: rgba(30, 30, 30, .93);
+            border-radius: 2px;
+            color: #fff;
+            z-index: 99999999;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            transition: .5s
+        }
+        
+        .-S-tR--ff-downloader._3M7UQ--minimize {
+            height: 62px
+        }
+        
+        .-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,
+        .-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header {
+            display: none
+        }
+        
+        .-S-tR--ff-downloader ._6_Mtt--header {
+            padding: 10px;
+            font-size: 17px;
+            font-family: sans-serif
+        }
+        
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            float: right;
+            background: #f1ecec;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            padding: 2px;
+            margin-top: -10px;
+            cursor: pointer
+        }
+        
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #e2dede
+        }
+        
+        .-S-tR--ff-downloader ._13XQ2--error {
+            color: red;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 19px
+        }
+        
+        .-S-tR--ff-downloader ._2dFLA--container {
+            position: relative;
+            height: 100%
+        }
+        
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info {
+            padding: 6px 15px 0;
+            font-family: sans-serif
+        }
+        
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div {
+            margin-bottom: 5px;
+            width: 100%;
+            overflow: hidden
+        }
+        
+        .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            margin-top: 21px;
+            font-size: 11px
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer {
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            font-weight: 700
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader {
+            -webkit-animation: n0BD1--rotation 3.5s linear forwards;
+            animation: n0BD1--rotation 3.5s linear forwards;
+            position: absolute;
+            top: -120px;
+            left: calc(50% - 35px);
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-top-color: #a29bfe;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar {
+            width: 100%;
+            height: 18px;
+            background: #dfe6e9;
+            border-radius: 5px
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar {
+            height: 100%;
+            background: #8bc34a;
+            border-radius: 5px
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status {
+            margin-top: 10px
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state {
+            float: left;
+            font-size: .9em;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            width: 100px;
+            height: 20px;
+            position: relative
+        }
+        
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage {
+            float: right
+        }
+        
+        ._3vFA8--container {
+            height: 0;
+            width: 100%;
+            position: relative;
+            background: radial-gradient(44.6% 929.87% at 22.02% 63.39%, #ae6fff 0, #8d35fd 100%);
+            cursor: pointer;
+            overflow: hidden;
+            transition: .8s
+        }
+        
+        ._3vFA8--container .AeJ0I--row {
+            padding: 11px;
+            margin: 0 auto;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo {
+            position: relative;
+            width: 51px;
+            height: 39px;
+            float: left;
+            margin-right: 104px;
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNDEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy40MDQgOC43TDEuNDU0IDM2LjMyNWMtLjI1OC40NDctLjM4Ny42Ny0uNDUxLjgzOWEyLjIzNiAyLjIzNiAwIDAwMS43MzMgMy4wMDFjLjE3OC4wMy40MzYuMDMuOTUyLjAzLjEwNiAwIC4xNTggMCAuMjEtLjAwM2EyLjIzNyAyLjIzNyAwIDAwMS4yNTItLjQ1Mmw2Ljg1OS00LjcyMWMuNDczLS4zLjkwOC0uNjU0IDEuMjk2LTEuMDUyLjM1NC4wOC43MjcuMTg1IDEuMTQ1LjMwMSAxLjk1LjU0NCA0Ljg4MyAxLjM2IDExLjUxNiAxLjM2IDcuNjcyIDAgMTAuNjEtLjg3NCAxMi4xNTQtMS40NzEuMzguMzQzLjc5Ni42NDYgMS4yNDQuOTA0bDcuNDg4IDQuODE0Yy4zMjQuMjA4LjcwMi4zMiAxLjA4OC4zMiAxLjU1IDAgMi41MTgtMS42NzggMS43NDMtMy4wMkwzMy4yNDIgOC43Yy0yLjU3LTQuNDUyLTMuODU2LTYuNjc5LTUuNTI1LTcuNDQzYTUuNzUxIDUuNzUxIDAgMDAtNC43ODggMGMtMS42NjkuNzY0LTIuOTU0IDIuOTktNS41MjUgNy40NDN6bTguNTYyIDIyLjUyNGMtNC4yNDYgMC03LjU0OC0uNTk4LTkuOTI1LTEuNTM0bC4wMDEtLjAwMmMtLjU2MS0uMjQtMS40MjItLjc4My0xLjIyOC0xLjI5NS4xOTctLjUyIDEuNDQ0LS41MDcgMi4xOC0uMzRsNS4wNzYtOC43MiAzLjU1LTIuNTQ0LTIuMjUuMzEuMDE0LS4wMjMtMi40NTMuMjdjLS40NC4wNS0uNjU4LjA3My0uNzU0LjAwNGEuMzA0LjMwNCAwIDAxLS4xMjMtLjI3MmMuMDEtLjExNy4xNzItLjI2Ni40OTYtLjU2NCAxLjMwNS0xLjE5OCAzLjM3Mi0zLjA5IDMuNzQ3LTMuMzk4YTEuNDM4IDEuNDM4IDAgMDEyLjIwMy40NzhsNy4zMTcgMTMuNDc4Yy45MjItLjI0NCAyLjMwOC0uMzU2IDIuNDU1LjQ4OC4xMy43NDMtLjYwNyAxLjI1OS0yLjM2NyAyLjAyNC0xLjcyMy44LTQuNjY3IDEuNjQtNy45MzkgMS42NHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=)
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._1ErQY--star-1,
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._2JsUk--star-2,
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._181pR--star-3 {
+            position: absolute
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._1ErQY--star-1 {
+            background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTUuNjU1IDM3LjAyNWMuNDc0LTEuNjMgMi41ODYtMi4wNTUgMy42NTMtLjczNWwzLjU4NSA0LjQzNWMuNDE0LjUxMiAxLjA0My44IDEuNy43OGw1LjctLjE3OGMxLjY5OC0uMDUzIDIuNzU1IDEuODI0IDEuODI5IDMuMjQ4bC0zLjExIDQuNzhhMi4xMDIgMi4xMDIgMCAwMC0uMjE3IDEuODU4bDEuOTMxIDUuMzY2Yy41NzUgMS41OTgtLjg4NCAzLjE4My0yLjUyNCAyLjc0MmwtNS41MDctMS40ODFhMi4xMDIgMi4xMDIgMCAwMC0xLjgzNC4zNjlsLTQuNTA3IDMuNDk0Yy0xLjM0MiAxLjA0LTMuMy4xNDMtMy4zODctMS41NTNsLS4yOTQtNS42OTVhMi4xMDIgMi4xMDIgMCAwMC0uOTE3LTEuNjNsLTQuNzE3LTMuMjA3Yy0xLjQwNC0uOTU1LTEuMTU1LTMuMDk0LjQzLTMuNzAybDUuMzI3LTIuMDM4YTIuMTAyIDIuMTAyIDAgMDAxLjI2Ny0xLjM3N2wxLjU5Mi01LjQ3NnoiIGZpbGw9IiNGRkQ2MDAiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iZmlsdGVyMF9kIiB4PSIuMTI3IiB5PSItMTEuMDkiIHdpZHRoPSIxMTkuMzI3IiBoZWlnaHQ9IjExOC40NjIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldC8+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMjIiLz48ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMCAxIDAgMCAwIDAuNSAwIi8+PGZlQmxlbmQgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==");
+            width: 120px;
+            height: 56px;
+            top: -12px;
+            left: -103px;
+            background-size: 120px 56px
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._2JsUk--star-2 {
+            background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE1IiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTguMzg4LTUuNjljLjg4NS0xLjAyNSAyLjU1Ny0uNjMzIDIuODkzLjY3OUw2Mi40MS0uNjA2Yy4xMy41MDguNDkuOTI2Ljk3NCAxLjEzbDQuMTkzIDEuNzYxYzEuMjQ4LjUyNCAxLjM5MiAyLjIzNi4yNDggMi45NjFsLTMuODQgMi40MzVjLS40NDQuMjgtLjczLjc1My0uNzc0IDEuMjc2bC0uMzggNC41MzFjLS4xMTMgMS4zNS0xLjY5NiAyLjAxNS0yLjc0IDEuMTUxbC0zLjUwMS0yLjlhMS42NzYgMS42NzYgMCAwMC0xLjQ1My0uMzQxbC00LjQyNyAxLjA0Yy0xLjMxOC4zMDktMi40NC0uOTkyLTEuOTQxLTIuMjVsMS42NzYtNC4yMjhhMS42NzYgMS42NzYgMCAwMC0uMTI0LTEuNDg3TDQ3Ljk2NC41ODRjLS43MDItMS4xNTguMTg5LTIuNjI3IDEuNTQtMi41NDFsNC41MzguMjg4YTEuNjc2IDEuNjc2IDAgMDAxLjM3Ni0uNTc4bDIuOTctMy40NDN6IiBmaWxsPSIjRkZENjAwIi8+PC9nPjxkZWZzPjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZCIgeD0iLjk2MiIgeT0iLTUyLjY2OCIgd2lkdGg9IjExMy40NzciIGhlaWdodD0iMTEyLjgyMSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0Lz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMiIvPjxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAxIDAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMC41IDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3ciLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3ciIHJlc3VsdD0ic2hhcGUiLz48L2ZpbHRlcj48L2RlZnM+PC9zdmc+");
+            width: 114px;
+            height: 53px;
+            left: 9px;
+            top: -12.63px;
+            background-size: 120px 62px
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._181pR--star-3 {
+            background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAzIiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTEuODAyIDM2LjA5OGMxLjA5OS0xLjQ5MSAzLjQyLTEuMTMyIDQuMDE2LjYyMmwyLjAwMSA1Ljg4N2MuMjMxLjY4Ljc2NyAxLjIxMSAxLjQ0OCAxLjQzN2w1LjkgMS45NjFjMS43NTguNTg0IDIuMTMzIDIuOTAzLjY1IDQuMDExbC00Ljk4IDMuNzIzYTIuMjkyIDIuMjkyIDAgMDAtLjkyIDEuODIxbC0uMDQyIDYuMjE4Yy0uMDEyIDEuODUyLTIuMTAxIDIuOTI2LTMuNjE0IDEuODU4bC01LjA4LTMuNTg3YTIuMjkyIDIuMjkyIDAgMDAtMi4wMTYtLjMxMmwtNS45MjYgMS44ODJjLTEuNzY1LjU2LTMuNDMyLTEuMDk1LTIuODgzLTIuODY0bDEuODQtNS45MzlhMi4yOTIgMi4yOTIgMCAwMC0uMzI1LTIuMDE0bC0zLjYyMi01LjA1NWMtMS4wNzgtMS41MDUtLjAxOS0zLjYwMSAxLjgzMy0zLjYyNmw2LjIxOC0uMDg1YTIuMjkyIDIuMjkyIDAgMDAxLjgxNC0uOTMybDMuNjg4LTUuMDA2eiIgZmlsbD0iI0ZGRDYwMCIvPjwvZz48ZGVmcz48ZmlsdGVyIGlkPSJmaWx0ZXIwX2QiIHg9Ii43ODgiIHk9Ii0xLjUzNCIgd2lkdGg9IjEwMi4xMzUiIGhlaWdodD0iMTAxLjEyOSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0Lz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNy4yNDYiLz48ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMCAxIDAgMCAwIDAuNSAwIi8+PGZlQmxlbmQgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==");
+            width: 114px;
+            height: 75px;
+            left: 34px;
+            top: -12.63px;
+            background-size: 120px 57px
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._2CXkc--title {
+            float: left;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            height: 23px;
+            font-family: Montserrat, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 37px;
+            color: #fff;
+            text-shadow: 0 0 16px #5600c5;
+            margin-right: 20px
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1CujY--btn {
+            float: left;
+            flex-direction: row;
+            padding: 6px 22px;
+            width: 111px;
+            margin-top: -2px;
+            height: 38px;
+            background: #ffd600;
+            box-shadow: 0 0 28px hsla(0, 0%, 100%, .5);
+            border-radius: 5px
+        }
+        
+        ._3vFA8--container .AeJ0I--row ._1CujY--btn ._2Wo2K--btnText {
+            width: 66px;
+            height: 14px;
+            font-family: Montserrat, serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: -.01em;
+            color: #9645fd;
+            align-self: center;
+            margin: 6px 0
+        }
+    </style>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">
+        .cookieconsent-optin,
+        .cookieconsent-optin-preferences,
+        .cookieconsent-optin-statistics,
+        .cookieconsent-optin-marketing {
+            display: block;
+            display: initial;
+        }
+        
+        .cookieconsent-optout-preferences,
+        .cookieconsent-optout-statistics,
+        .cookieconsent-optout-marketing,
+        .cookieconsent-optout {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pgjndpcilbcanlnhhjmhjalilcmoicjc/styles.css">
+</head>
+
+<body class="body juul-ru" data-instant-whitelist="">
+
+
+
+    <div id="header__container" class="header__container" data-js="header-container">
+        <div class="header__nav-wrapper mini-header container-fluid">
+            <nav class="row header__navbar">
+                <div class="col-xs-3 col-sm-2 center-xs mini-header__juul-logo header__navbar-item">
+                    <a href="https://www.juul.ru/">
+                        <img alt="" class="header__logo-link" src="./mission-value_files/juul-logo.svg">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-8 center-xs mini-header__title-wrapper">
+                    <div class="mini-header__title"></div>
+                </div>
+
+
+                <div class="col-xs-2 center-xs hide-mobile header__quick-links__item header__quick-links__item--language header__navbar-item">
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div data-react-class="application/components/Header.Header" data-react-props="{&quot;logo&quot;:{&quot;url&quot;:&quot;//assets.juul.com/ctf/images/kvgu9869fyjd/6cQ79mDpbOqIShBTqOqz83/ae7c4235339b9dd5d29c0599dc03b298/juul-logo.svg&quot;,&quot;description&quot;:&quot;&quot;},&quot;primaryItems&quot;:[{&quot;id&quot;:&quot;4ObwFpJAQAUT1JViC54dFu&quot;,&quot;displayText&quot;:&quot;Наша миссия&quot;,&quot;link&quot;:&quot;/mission-values&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;794UfaVOQlCs7LyLX4zxkz&quot;,&quot;displayText&quot;:&quot;Наш продукт&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;huCwt4s19rlLJxP4XCY2l&quot;,&quot;displayText&quot;:&quot;Информация о товаре&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;4i54UgsTk6RzrFgeuKolvj&quot;,&quot;displayText&quot;:&quot;Качество и стандарты YOOLS Labs&quot;,&quot;link&quot;:&quot;/quality-and-standards&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;4LBBwFfO7JHUBNs0VtRExz&quot;,&quot;displayText&quot;:&quot;Состав жидкости YOOLSpods&quot;,&quot;link&quot;:&quot;/learn/pods#juulpods-ingredients&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;50YAtk3OGaMskHuakIf0xS&quot;,&quot;displayText&quot;:&quot;Знакомство с YOOLS&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;6F8gson6YE9qfo1yQsiYVc&quot;,&quot;displayText&quot;:&quot;Знакомство с YOOLS&quot;,&quot;link&quot;:&quot;/learn/discover&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;24g9Oh2ZBWPSEgPsAHsXwN&quot;,&quot;displayText&quot;:&quot;Устройство YOOLS&quot;,&quot;link&quot;:&quot;/learn/device&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;nqlwLEOhOeukRwtQHvDQ8&quot;,&quot;displayText&quot;:&quot;Кратко о YOOLSpods&quot;,&quot;link&quot;:&quot;/learn/pods&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;1OWNV0Ckxj2XVx0oQjFBfu&quot;,&quot;displayText&quot;:&quot;С чего начать&quot;,&quot;link&quot;:&quot;/learn/getstarted&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;ZGZZNK9EBzB9bi7aTy2BF&quot;,&quot;displayText&quot;:&quot;О нас&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;2Tv6FOxIKb8ExM0kPaVWdk&quot;,&quot;displayText&quot;:&quot;НАША ОТВЕТСТВЕННОСТЬ&quot;,&quot;link&quot;:&quot;/our-responsibility&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;6TIKInlWfTZ7mju4fBXKjV&quot;,&quot;displayText&quot;:&quot;Регулирование никотиносодержащей продукции&quot;,&quot;link&quot;:&quot;/our-responsibility#regulation&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;3nUNzOB8jYYb2nYnUsN757&quot;,&quot;displayText&quot;:&quot;Информационные ресурсы&quot;,&quot;link&quot;:&quot;/our-responsibility#resources&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;42GTS4EEQbfgZWw3e9CvLg&quot;,&quot;displayText&quot;:&quot;Несовершеннолетние: образование, осведомленность и профилактика&quot;,&quot;link&quot;:&quot;/youth-prevention&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;2h8vzR32MGGH7PS5Kl3RXp&quot;,&quot;displayText&quot;:&quot;Обязательство по обеспечению конфиденциальности&quot;,&quot;link&quot;:&quot;/privacy-commitment&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;50mlMk8Zb2MBquTZYpEDuW&quot;,&quot;displayText&quot;:&quot;НАША ИСТОРИЯ&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;4WuUy6E6nXsvmNGJZ4SRGy&quot;,&quot;displayText&quot;:&quot;Наша команда&quot;,&quot;link&quot;:&quot;/our-story&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;1BrELiS0R0tuBBzPdJj0kY&quot;,&quot;displayText&quot;:&quot;Для прессы&quot;,&quot;link&quot;:&quot;/press-kit&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;61roLSYLtBG8hIyX1pZQbT&quot;,&quot;displayText&quot;:&quot;НАШИ ЦЕННОСТИ&quot;,&quot;link&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[{&quot;id&quot;:&quot;6AVfufAbXPGbLxg3M5KVnk&quot;,&quot;displayText&quot;:&quot;Наша миссия&quot;,&quot;link&quot;:&quot;/mission-values&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;3HhpgoS4S2A6dUpvgloF68&quot;,&quot;displayText&quot;:&quot;Наши ценности&quot;,&quot;link&quot;:&quot;/our-values&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;4E84ZPlRtdVvpZIk6UKzLg&quot;,&quot;displayText&quot;:&quot;Работа в YOOLS&quot;,&quot;link&quot;:&quot;/join-us&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;32MVaPkJhd85pZNJCQbDFM&quot;,&quot;displayText&quot;:&quot;Купить&quot;,&quot;link&quot;:&quot;https://juul.babylonvape.ru/?utm_source=juul\u0026utm_medium=partner\u0026utm_campaign=juul&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;4Sm3QowjbtbPbLbL0pWMZ2&quot;,&quot;displayText&quot;:&quot;Для прессы&quot;,&quot;link&quot;:&quot;/press-kit&quot;,&quot;image&quot;:null,&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;}],&quot;secondaryItems&quot;:[{&quot;id&quot;:&quot;2eODosO9yKRXDPt9kU3BKU&quot;,&quot;displayText&quot;:&quot;Магазины&quot;,&quot;link&quot;:&quot;/locator&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;//assets.juul.com/ctf/images/kvgu9869fyjd/4b7ogdnLTYR2rIVPDYAYo6/4da3b2a75ecc90a3e1bc042210714fcf/store-locator-baseline-outlined.svg&quot;,&quot;description&quot;:&quot;&quot;},&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:false,&quot;textClass&quot;:&quot;&quot;},{&quot;id&quot;:&quot;7oJ46EIZZnSDhJ9QR67c8u&quot;,&quot;displayText&quot;:&quot;Поддержка&quot;,&quot;link&quot;:&quot;https://support.juul.ru/&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;//assets.juul.com/ctf/images/kvgu9869fyjd/2BAz7durd8vhhryX6QVkj3/027451978378afbe9e1d6491d19b8dae/juul_customer_support.svg&quot;,&quot;description&quot;:&quot;Поддержка&quot;},&quot;subItems&quot;:[],&quot;promotionalItems&quot;:[],&quot;positionEnd&quot;:true,&quot;textClass&quot;:&quot;&quot;}],&quot;promotionalItems&quot;:[],&quot;uniqueIdentifier&quot;:&quot;default-navigation&quot;,&quot;languageDirection&quot;:&quot;ltr&quot;,&quot;mobileNavigationAccountItem&quot;:null,&quot;storeLocales&quot;:{&quot;display&quot;:false,&quot;locales&quot;:[{&quot;locale&quot;:&quot;ru-RU&quot;,&quot;name&quot;:&quot;Pусский&quot;,&quot;path&quot;:&quot;#&quot;}],&quot;current&quot;:&quot;ru-RU&quot;,&quot;currentBase&quot;:&quot;ru&quot;,&quot;currentImage&quot;:&quot;/packs/images/icons/flags/RU-f93e4e2a.svg&quot;}}"
+            data-hydrate="t">
+            <nav data-js="desktop-navigation" data-preload-links="true" class="header__nav-wrapper desktop-navigation__container" dir="ltr" data-tracking-event-name="Navigation selected">
+                <div hidden class="desktop-navigation__secondary-items-container">
+                    <div class="desktop-navigation__secondary-items content-wrapper">
+                        <ul class="desktop-navigation__group desktop-navigation__group--position-start">
+                            <li class="desktop-navigation__secondary-item">
+                                <a href="https://www.juul.ru/locator" class="text--body--small desktop-navigation__secondary-item__content" data-instant=""><img src="./mission-value_files/store-locator-baseline-outlined.svg" alt="" class="desktop-navigation__secondary-item__icon"><span class="desktop-navigation__secondary-item__text">Магазины</span></a>
+                            </li>
+                        </ul>
+                        <ul class="desktop-navigation__group desktop-navigation__group--position-end">
+                            <li class="desktop-navigation__secondary-item">
+                                <a href="https://support.juul.ru/" class="text--body--small desktop-navigation__secondary-item__content" data-instant=""><img src="./mission-value_files/juul_customer_support.svg" alt="Поддержка" class="desktop-navigation__secondary-item__icon"><span class="desktop-navigation__secondary-item__text">Поддержка</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="desktop-navigation__primary-items-container">
+                    <div class="desktop-navigation__primary-items content-wrapper">
+                        <ul class="desktop-navigation__group desktop-navigation__group--position-start">
+                            <li class="desktop-navigation__primary-item">
+                                <a href="https://vikbell01.github.io/Juul/index.html"><img alt="" class="desktop-navigation__logo__icon desktop-navigation__primary-item__content" src="./Альтернатива обычным сигаретам _ JUUL_files/juul-logo.svg"></a>
+                            </li>
+                            <li class="desktop-navigation__primary-item"><a href="https://vikbell01.github.io/mission-values/index.html" class="text--body desktop-navigation__primary-item__content">Наша миссия</a>
+                                <div id="desktop-navigation__primary-item-4ObwFpJAQAUT1JViC54dFu" data-js="desktop-navigation-dropdown" data-testid="desktop-navigation-dropdown" class="desktop-navigation__dropdown-content">
+                                    <div class="content-wrapper">
+                                        <ul class="desktop-navigation__dropdown-columns row"></ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desktop-navigation__primary-item"><button type="button" class="text--body desktop-navigation__primary-item__content" aria-controls="desktop-navigation__primary-item-794UfaVOQlCs7LyLX4zxkz" aria-haspopup="true" aria-expanded="false">Наш продукт</button>
+                                <div id="desktop-navigation__primary-item-794UfaVOQlCs7LyLX4zxkz" data-js="desktop-navigation-dropdown" data-testid="desktop-navigation-dropdown" class="desktop-navigation__dropdown-content">
+                                    <div class="content-wrapper">
+                                        <ul class="desktop-navigation__dropdown-columns row">
+                                            <li class="desktop-navigation__dropdown-content__column col-xs">
+                                                <ul class="desktop-navigation__dropdown-content__link-items">
+                                                    <li class="desktop-navigation__dropdown-content__link-item">
+                                                        <h4 class="heading--small desktop-navigation__dropdown-content__text">Информация о товаре</h4>
+                                                    </li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/quality-and-standards" class="text--body desktop-navigation__dropdown-content__text">Качество и стандарты YOOLS</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/learn/pods#YOOLS-ingredients" class="text--body desktop-navigation__dropdown-content__text">Состав жидкости YOOLS</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="desktop-navigation__dropdown-content__column col-xs">
+                                                <ul class="desktop-navigation__dropdown-content__link-items">
+                                                    <li class="desktop-navigation__dropdown-content__link-item">
+                                                        <h4 class="heading--small desktop-navigation__dropdown-content__text">Знакомство с YOOLS</h4>
+                                                    </li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/learn/device" class="text--body desktop-navigation__dropdown-content__text">Устройство YOOLS</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/learn/getstarted" class="text--body desktop-navigation__dropdown-content__text">С чего начать</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desktop-navigation__primary-item"><button type="button" class="text--body desktop-navigation__primary-item__content" aria-controls="desktop-navigation__primary-item-ZGZZNK9EBzB9bi7aTy2BF" aria-haspopup="true" aria-expanded="false">О нас</button>
+                                <div id="desktop-navigation__primary-item-ZGZZNK9EBzB9bi7aTy2BF" data-js="desktop-navigation-dropdown" data-testid="desktop-navigation-dropdown" class="desktop-navigation__dropdown-content">
+                                    <div class="content-wrapper">
+                                        <ul class="desktop-navigation__dropdown-columns row">
+                                            <li class="desktop-navigation__dropdown-content__column col-xs">
+                                                <ul class="desktop-navigation__dropdown-content__link-items">
+                                                    <li class="desktop-navigation__dropdown-content__link-item">
+                                                        <h4 class="heading--small desktop-navigation__dropdown-content__text"><a href="https://vikbell01.github.io/our-responsibility">НАША ОТВЕТСТВЕННОСТЬ</a></h4>
+                                                    </li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/our-responsibility#regulation" class="text--body desktop-navigation__dropdown-content__text">Регулирование никотиносодержащей продукции</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/our-responsibility#resources" class="text--body desktop-navigation__dropdown-content__text">Информационные ресурсы</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/youth-prevention" class="text--body desktop-navigation__dropdown-content__text">Несовершеннолетние: образование, осведомленность и профилактика</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/privacy-commitment" class="text--body desktop-navigation__dropdown-content__text">Обязательство по обеспечению конфиденциальности</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="desktop-navigation__dropdown-content__column col-xs">
+                                                <ul class="desktop-navigation__dropdown-content__link-items">
+                                                    <li class="desktop-navigation__dropdown-content__link-item">
+                                                        <h4 class="heading--small desktop-navigation__dropdown-content__text">НАША ИСТОРИЯ</h4>
+                                                    </li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/our-story" class="text--body desktop-navigation__dropdown-content__text">Наша команда</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/Juul/press-kit/" class="text--body desktop-navigation__dropdown-content__text">Для прессы</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="desktop-navigation__dropdown-content__column col-xs">
+                                                <ul class="desktop-navigation__dropdown-content__link-items">
+                                                    <li class="desktop-navigation__dropdown-content__link-item">
+                                                        <h4 class="heading--small desktop-navigation__dropdown-content__text">НАШИ ЦЕННОСТИ</h4>
+                                                    </li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/mission-values/index.html" class="text--body desktop-navigation__dropdown-content__text">Наша миссия</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/our-values/index.html" class="text--body desktop-navigation__dropdown-content__text">Наши ценности</a></li>
+                                                    <li class="desktop-navigation__dropdown-content__link-item"><a href="https://vikbell01.github.io/join-us/index.html" class="text--body desktop-navigation__dropdown-content__text">Работа в YOOLS</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desktop-navigation__primary-item"><a href="https://juul.babylonvape.ru/?utm_source=juul&amp;utm_medium=partner&amp;utm_campaign=juul" class="text--body desktop-navigation__primary-item__content">Купить</a>
+                                <div id="desktop-navigation__primary-item-32MVaPkJhd85pZNJCQbDFM" data-js="desktop-navigation-dropdown" data-testid="desktop-navigation-dropdown" class="desktop-navigation__dropdown-content">
+                                    <div class="content-wrapper">
+                                        <ul class="desktop-navigation__dropdown-columns row"></ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desktop-navigation__primary-item"><a href="https://vikbell01.github.io/Juul/press-kit" class="text--body desktop-navigation__primary-item__content">Для прессы</a>
+                                <div id="desktop-navigation__primary-item-4Sm3QowjbtbPbLbL0pWMZ2" data-js="desktop-navigation-dropdown" data-testid="desktop-navigation-dropdown" class="desktop-navigation__dropdown-content">
+                                    <div class="content-wrapper">
+                                        <ul class="desktop-navigation__dropdown-columns row"></ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="desktop-navigation__group desktop-navigation__group--position-end"></ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mobile-navigation__container header__nav-wrapper" dir="ltr" data-tracking-event-name="Navigation selected" data-preload-links="true">
+                <nav class="content-wrapper">
+                    <div class="row middle-xs">
+                        <div class="col-xs"><button class="mobile-navigation__open-button" type="button" data-testid="mobile-navigation-open-icon"><svg alt="Menu" class="mobile-navigation__open-button__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M4.5 6.5a.5.5 0 0 1 0-1h15a.5.5 0 1 1 0 1h-15zm0 6a.5.5 0 1 1 0-1h15a.5.5 0 1 1 0 1h-15zm0 6a.5.5 0 1 1 0-1h15a.5.5 0 1 1 0 1h-15z"></path></svg></button></div>
+                        <div class="col-xs">
+                            <a href="https://www.juul.ru/" data-instant=""><img src="./mission-value_files/juul-logo.svg" alt="" class="mobile-navigation__logo__icon"></a>
+                        </div>
+                        <div class="col-xs mobile-navigation__right-icons"></div>
+                    </div>
+                </nav>
+                <div class="mobile-navigation__sidebar" data-testid="mobile-navigation-sidebar">
+                    <div class="mobile-navigation__overlay"></div><button type="button" class="mobile-navigation__close-button" data-testid="mobile-navigation-close-icon"><svg alt="Close" class="mobile-navigation__close-button__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M12 11.293l5.146-5.147a.5.5 0 0 1 .708.708L12.707 12l5.147 5.146a.5.5 0 0 1-.708.708L12 12.707l-5.146 5.147a.5.5 0 0 1-.708-.708L11.293 12 6.146 6.854a.5.5 0 1 1 .708-.708L12 11.293z"></path></svg></button>
+                    <nav class="mobile-navigation">
+                        <ul class="mobile-navigation__primary-menu mobile-navigation__list">
+                            <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/mission-values" class="mobile-navigation__link mobile_navigation__item__text text--body" data-instant="">Наша миссия</a></li>
+                            <li class="mobile-navigation__primary-item">
+                                <div class="mobile_navigation__item__text mobile_navigation__item--clickable text--body" role="presentation">Наш продукт<svg alt="" class="mobile-navigation__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M9.166 16.128L13.753 12 9.166 7.872a.5.5 0 0 1 .668-.744l5 4.5a.5.5 0 0 1 0 .744l-5 4.5a.5.5 0 1 1-.668-.744z"></path></svg></div>
+                                <div class="mobile-navigation__sub-menu">
+                                    <div class="mobile-navigation__sub-menu__heading" role="presentation">Наш продукт<svg alt="" class="mobile-navigation__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M14.834 16.128a.5.5 0 0 1-.668.744l-5-4.5a.5.5 0 0 1 0-.744l5-4.5a.5.5 0 0 1 .668.744L10.247 12l4.587 4.128z"></path></svg></div>
+                                    <ul class="mobile-navigation__list">
+                                        <li class="mobile-navigation__primary-item">
+                                            <div class="mobile-navigation__expanded-item">
+                                                <div class="mobile-navigation__expanded-item__heading">Информация о товаре</div>
+                                                <ul class="mobile-navigation__list">
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/quality-and-standards" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Качество и стандарты YOOLS Labs</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/learn/pods#juulpods-ingredients" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Состав жидкости YOOLSpods</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mobile-navigation__primary-item">
+                                            <div class="mobile-navigation__expanded-item">
+                                                <div class="mobile-navigation__expanded-item__heading">Знакомство с YOOLS</div>
+                                                <ul class="mobile-navigation__list">
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/learn/discover" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Знакомство с YOOLS</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/learn/device" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Устройство YOOLS</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/learn/pods" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Кратко о YOOLSpods</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/learn/getstarted" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">С чего начать</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-navigation__primary-item">
+                                <div class="mobile_navigation__item__text mobile_navigation__item--clickable text--body" role="presentation">О нас<svg alt="" class="mobile-navigation__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M9.166 16.128L13.753 12 9.166 7.872a.5.5 0 0 1 .668-.744l5 4.5a.5.5 0 0 1 0 .744l-5 4.5a.5.5 0 1 1-.668-.744z"></path></svg></div>
+                                <div class="mobile-navigation__sub-menu">
+                                    <div class="mobile-navigation__sub-menu__heading" role="presentation">О нас<svg alt="" class="mobile-navigation__icon" width="24" height="24" viewBox="0 0 24 24"><path fill="#424242" fill-rule="evenodd" d="M14.834 16.128a.5.5 0 0 1-.668.744l-5-4.5a.5.5 0 0 1 0-.744l5-4.5a.5.5 0 0 1 .668.744L10.247 12l4.587 4.128z"></path></svg></div>
+                                    <ul class="mobile-navigation__list">
+                                        <li class="mobile-navigation__primary-item">
+                                            <div class="mobile-navigation__expanded-item">
+                                                <div class="mobile-navigation__expanded-item__heading"><a href="https://www.juul.ru/our-responsibility" data-instant="">НАША ОТВЕТСТВЕННОСТЬ</a></div>
+                                                <ul class="mobile-navigation__list">
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/our-responsibility#regulation" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Регулирование никотиносодержащей продукции</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/our-responsibility#resources" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Информационные ресурсы</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/youth-prevention" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Несовершеннолетние: образование, осведомленность и профилактика</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/privacy-commitment" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Обязательство по обеспечению конфиденциальности</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mobile-navigation__primary-item">
+                                            <div class="mobile-navigation__expanded-item">
+                                                <div class="mobile-navigation__expanded-item__heading">НАША ИСТОРИЯ</div>
+                                                <ul class="mobile-navigation__list">
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/our-story" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Наша команда</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/press-kit" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Для прессы</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mobile-navigation__primary-item">
+                                            <div class="mobile-navigation__expanded-item">
+                                                <div class="mobile-navigation__expanded-item__heading">НАШИ ЦЕННОСТИ</div>
+                                                <ul class="mobile-navigation__list">
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/mission-values" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Наша миссия</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/our-values" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Наши ценности</a></li>
+                                                    <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/join-us" class="mobile-navigation__link mobile_navigation__item__text" data-instant="">Работа в YOOLS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-navigation__primary-item"><a href="https://juul.babylonvape.ru/?utm_source=juul&amp;utm_medium=partner&amp;utm_campaign=juul" class="mobile-navigation__link mobile_navigation__item__text text--body" data-instant="">Купить</a></li>
+                            <li class="mobile-navigation__primary-item"><a href="https://www.juul.ru/press-kit" class="mobile-navigation__link mobile_navigation__item__text text--body" data-instant="">Для прессы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-react-class="cart/wrapped/Sidebar" data-react-props="{&quot;isSubscribableStore&quot;:false,&quot;evergreenOffering&quot;:null,&quot;cartCommitmentUpsellContent&quot;:{}}">
+            <div class="CartSidebar CartSidebar--closed" data-testid="sidebar">
+                <div class="CartSidebar__content">
+                    <div class="CartSidebar__header"><span class="heading--small"><span class="intl-text" data-i18n-key="js.cart.my_cart">Моя корзина</span> (0)</span><img class="CartSidebar__close-icon icon" src="./mission-value_files/close-1c72a93f.svg" data-testid="close-icon"></div>
+                    <div class="CartSidebar__banner--top"></div>
+                    <div class="CartSidebar__empty-state">
+                        <h3><span class="intl-text" data-i18n-key="js.cart.empty_cart.cart_is_empty">Ваша корзина пуста</span> </h3><button class="button CartSidebar__button--continue-shopping"><span class="button__text"><span class="intl-text" data-i18n-key="js.cart.empty_cart.continue">Продолжить покупки</span><svg class="button__icon" width="14" height="10" fill="none"><path d="M8.235 0L13 5.021 8.235 10M13 5H0" class="icon-stroke"></path></svg></span></button></div>
+                    <div class="ledger sidebar-ledger">
+                        <h2 class="ledger__order-summary-heading heading--medium"><span class="intl-text" data-i18n-key="js.cart.order_summary.title">Order Summary</span></h2>
+                        <div class="ledger__item subheading--small"><span class="ledger__item-label"><span class="intl-text" data-i18n-key="js.cart.order_summary.subtotal">Итого</span></span><span class="ledger__item-value"><span><span>0,00&nbsp;₽</span></span>
+                            </span>
+                        </div>
+                        <div class="ledger__item subheading--small"><span class="ledger__item-label"><span class="intl-text" data-i18n-key="js.cart.order_summary.shipping">Доставка</span></span><span class="ledger__item-value"><span><span>7,00&nbsp;₽</span></span>
+                            </span>
+                        </div>
+                        <div class="ledger__item subheading--small"><span class="ledger__item-label"><span class="intl-text" data-i18n-key="js.cart.order_summary.tax">Налог</span></span><span class="ledger__item-value"><span class="intl-text" data-i18n-key="js.cart.order_summary.tbd">Предстоит определить</span></span>
+                        </div>
+                        <div class="ledger__item text--body"><span class="ledger__item-label"><strong><span class="intl-text" data-i18n-key="js.cart.sidebar.total">Всего</span></strong>
+                            </span><span class="ledger__item-value"><strong><span><span>0,00&nbsp;₽</span></span>
+                            </strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ledger__button"><button data-selenium="cart-sidebar-checkout-button" class="button cart-ledger__checkout button--full-width" disabled=""><span class="button__text"><span class="intl-text" data-i18n-key="js.cart.checkout_button.proceed">Перейти к оплате</span><svg class="button__icon" width="14" height="10" fill="none"><path d="M8.235 0L13 5.021 8.235 10M13 5H0" class="icon-stroke"></path></svg></span></button></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header__overlay"></div>
+
+
+        <div class="content-wrapper">
+            <div data-react-class="notification/components/Snackbar/SnackbarContainer.SnackbarContainerWithIntl" data-react-props="{}">
+                <div class="snackbar-container" role="status" aria-live="polite" aria-relevant="additions">
+                    <div class="snackbar-drawer snackbar-drawer--position-top"></div>
+                    <div class="snackbar-drawer snackbar-drawer--position-bottom content-wrapper"></div>
+                    <div class="snackbar-drawer snackbar-drawer--position-added-to-cart"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body__content" data-js="modal-aria-hidden">
+
+
+
+
+        <div class="marketing-page mission-values-page">
+
+            <section class="page-hero" data-preload-links="">
+                <picture class="page-hero__image">
+                    <source media="(max-width: 767px)" data-srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=187,
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=375 2x,
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=562 3x
+      " srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=187,
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=375 2x,
+        //assets.juul.com/ctf/images/kvgu9869fyjd/55kK1pJh4lhQqoCwapv9kQ/47b41539c6d28399281aa44e68542bc3/hero-mobile_2x-7bcb063d8080e4f164cb704a83101326.jpg?w=562 3x
+      ">
+                    <source media="(min-width: 1441px) and (max-width: 2880px)" data-srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=2880
+      " srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=2880
+      ">
+                    <source media="(min-width: 2881px)" data-srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=4000
+      " srcset="
+        //assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=4000
+      ">
+                    <img class=" lazyloaded" data-srcset="//assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=1440" srcset="//assets.juul.com/ctf/images/kvgu9869fyjd/6Hrb82R7hGNoVbj69A4lxV/0e9818f05327c484df33ef2e603cafda/mission-hero_2x-590fc3ddc35811891fd44386e31cf999.jpg?q=65&amp;w=1440">
+                </picture>
+
+                <div class="content-wrapper">
+                    <div class="row scalable-content-section page-hero__content-wrapper page-hero__content-align--left page-hero__content-font--light">
+                        <div class="col-xs-12 col-md-7 page-hero__content">
+                            <h1>НАША МИССИЯ</h1>
+
+                            <h3>Наша миссия – помочь миллиарду взрослых курильщиков в мире избавиться от сигарет и обеспечить невозможность использования наших продуктов несовершеннолетними.</h3>
+
+                            <div class="scalable-content-section__links" data-preload-links="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="content-wrapper">
+                <div class="scalable-content-section  scalable-content-section--border-bottom">
+                    <div class="row content-section content-section--align--left content-section--width--medium">
+                        <div class="col-xs-12 content-section__content">
+                            <p class="natural-heading--small" style="margin: 1rem 0; color:#000000;">YOOLS создан людьми, которые долгое время курили обычные сигареты и, осознавая их негативное воздействие на свое здоровье, искали альтернативу. Мы помогаем людям сокращать количество выкуренных сигарет, уменьшать зависимость
+                                или вовсе от нее избавиться.</p>
+
+
+                            <div class="scalable-content-section__links" data-preload-links="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div class="image-content-section image-content-section--full-bleed-with-padding" style="background-color:#fff">
+                    <div class="content-wrapper">
+                        <div class="image-content-section__wrapper" style="background-color:transparent">
+                            <picture class="image-content-section__image image-content-section__image--end">
+                                <source media="(min-width: 768px)" data-srcset="//assets.juul.com/ctf/images/kvgu9869fyjd/1Y7HRKmo6DTqg2DY5bL9eK/ff109cd95a2cb2b72d5617e045f253fc/Starter_-_Product_Page_-_In_the_box_4x.png" srcset="//assets.juul.com/ctf/images/kvgu9869fyjd/1Y7HRKmo6DTqg2DY5bL9eK/ff109cd95a2cb2b72d5617e045f253fc/Starter_-_Product_Page_-_In_the_box_4x.png"><img data-src="//assets.juul.com/ctf/images/kvgu9869fyjd/1oe0psLsX7H1N3jycxvuZQ/d0d3a9b61f557a02c293d5202bc35558/Starter_-_Product_Page_-_In_the_box_4x.png" class="image-content-section__image-element lazyloaded" alt=""
+                                    src="./mission-value_files/Starter_-_Product_Page_-_In_the_box_4x.png"></picture>
+                            <div class="image-content-section__content">
+                                <div class="image-content-section__body markdown-content">
+                                    <h3>НАШИ ОБЯЗАТЕЛЬСТВА</h3>
+
+                                    <p>Мы не останавливаемся на достигнутом и открыты к диалогу. Мы намерены проводить исследования наших электронных устройств и публиковать результаты.</p>
+                                </div>
+                                <div class="image-content-section__call-to-actions"><a class="button image-content-section__call-to-action button--full-width" href="https://www.juul.ru/our-perspective"><span class="button__text">УЗНАТЬ БОЛЬШЕ<svg class="button__icon" width="14" height="10" fill="none"><path d="M8.235 0L13 5.021 8.235 10M13 5H0" class="icon-stroke"></path></svg></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-wrapper">
+                <div class="scalable-content-section  ">
+                    <div class="row content-section content-section--align--left content-section--width--large">
+                        <div class="col-xs-12 content-section__content">
+                            <h3>НАША ЦЕЛЬ</h3>
+
+                            <p>Максимизировать пользу и снизить потенциальный вред. Как ученые, разработчики и инженеры, мы считаем, что использование электронных устройств может принести пользу взрослым потребителям сигарет и причинить вред тем, кто раньше
+                                не курил.</p>
+
+                            <p>Не доказано, что никотин вызывает рак, но известно, что он может вызвать зависимость. Поэтому мы считаем, что YOOLS и другие никотиносодержащие системы не подходят для взрослых, которые никогда не курили.</p>
+
+                            <div class="scalable-content-section__links" data-preload-links="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="desktop-navigation__secondary-items-container">
+        <div class="desktop-navigation__secondary-items content-wrapper">
+            <ul class="desktop-navigation__group desktop-navigation__group--position-end">
+                <li class="desktop-navigation__secondary-item">
+                    <a href="https://support.juul.ru/" class="text--body--small desktop-navigation__secondary-item__content" data-instant=""><img src="./mission-value_files/juul_customer_support.svg" alt="Поддержка" class="desktop-navigation__secondary-item__icon"><span class="desktop-navigation__secondary-item__text">Поддержка</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-react-class="application/components/Footer.Footer" data-react-props="{&quot;leftColumns&quot;:[&quot;\u003ch6\u003eПоддержка\u003c/h6\u003e\n\n\u003cp\u003e\u003ca href=\&quot;https://www.juul.ru/help/faq\&quot;\u003eСвязаться со службой поддержки\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;https://juul.ru/help/faq\&quot;\u003eFAQ\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;https://juul.ru/help/warranty\&quot;\u003eГарантия\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;https://docs.google.com/forms/d/e/1FAIpQLSePxydf4V_TI2yfRuuuo8UhW4emjszGJJ5f063VipSAnIBcyw/viewform\&quot;\u003eСотрудничество\u003c/a\u003e\u003c/p\u003e\n&quot;,&quot;\u003ch6\u003eНаша компания\u003c/h6\u003e\n\n\u003cp\u003e\u003ca href=\&quot;/join-us\&quot;\u003eРабота в JUUL\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;/our-responsibility\&quot;\u003eНаша ответственность\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;/our-story\&quot;\u003eНаша команда\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;https://juul.com/global\&quot;\u003eJUUL Labs Global\u003c/a\u003e\u003c/p\u003e\n&quot;,&quot;\u003ch6\u003eПрочее\u003c/h6\u003e\n\n\u003cp\u003e\u003ca href=\&quot;/press-kit\&quot;\u003eДля прессы\u003c/a\u003e\u003cbr\u003e\n\u003ca href=\&quot;https://assets.ctfassets.net/kvgu9869fyjd/nIxccqheSZtri7jRTKXVW/4b2851409b71d18e1742c1fe1f8f01eb/20200428-av-policy-juul.ru.pdf\&quot;\u003eПолитика проверки возраста\u003c/a\u003e\u003c/p\u003e\n&quot;],&quot;rightHandSideContent&quot;:&quot;\u003cp\u003e© 2020 JUUL Labs, Inc. Все права защищены.\u003c/p\u003e\n\n\u003cp\u003eJUUL, JUUL Labs и JUULpods являются торговыми марками JUUL Labs, Inc.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\&quot;/cookie-policy\&quot;\u003eПолитика использования файлов cookie\u003c/a\u003e | \u003ca href=\&quot;/tm-guide\&quot;\u003eРуководство по товарным знакам\u003c/a\u003e | \u003ca href=\&quot;/tm-list\&quot;\u003eСписок товарных знаков\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eПРОДУКЦИЯ ИМЕЕТ ВОЗРАСТНЫЕ ОГРАНИЧЕНИЯ.\u003cbr\u003e\nПРОДАЖА НЕСОВЕРШЕННОЛЕТНИМ ЗАПРЕЩЕНА.\u003c/p\u003e\n\n\u003cp\u003eВнимание: \u003cbr\u003e\nПродукт содержит никотин, вызывающий привыкание.\u003c/p\u003e\n\n\u003cp\u003eЗащищено выпущенными и/или находящимися на одобрении \u003cbr\u003e\n\u003ca href=\&quot;/intellectual-property-list\&quot;\u003eпатентами США и международными патентами\u003c/a\u003e\u003c/p\u003e\n&quot;,&quot;storeLocales&quot;:{&quot;display&quot;:false,&quot;locales&quot;:[{&quot;locale&quot;:&quot;ru-RU&quot;,&quot;name&quot;:&quot;Pусский&quot;,&quot;path&quot;:&quot;#&quot;}],&quot;current&quot;:&quot;ru-RU&quot;,&quot;currentBase&quot;:&quot;ru&quot;,&quot;currentImage&quot;:&quot;/packs/images/icons/flags/RU-f93e4e2a.svg&quot;}}"
+        data-hydrate="t">
+        <div class="footer" data-reactroot="">
+            <div class="footer__content content-wrapper text--body--small" data-preload-links="true">
+                <div class="footer__left">
+                    <div class="footer-definition">
+                        <h6>Поддержка</h6>
+
+                        <p><a href="https://www.juul.ru/help/faq" data-instant="">Связаться со службой поддержки</a><br>
+                            <a href="https://juul.ru/help/faq" data-instant="">FAQ</a><br>
+                            <a href="https://juul.ru/help/warranty" data-instant="">Гарантия</a><br>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePxydf4V_TI2yfRuuuo8UhW4emjszGJJ5f063VipSAnIBcyw/viewform" data-instant="">Сотрудничество</a></p>
+                    </div>
+                    <div class="footer-definition">
+                        <h6>Наша компания</h6>
+
+                        <p><a href="https://www.juul.ru/join-us" data-instant="">Работа в YOOLS</a><br>
+                            <a href="https://www.juul.ru/our-responsibility" data-instant="">Наша ответственность</a><br>
+                            <a href="https://www.juul.ru/our-story" data-instant="">Наша команда</a><br>
+                            <a href="https://juul.com/global" data-instant="">YOOLS Labs Global</a></p>
+                    </div>
+                    <div class="footer-definition">
+                        <h6>Прочее</h6>
+
+                        <p><a href="https://www.juul.ru/press-kit" data-instant="">Для прессы</a><br>
+                            <a href="https://assets.ctfassets.net/kvgu9869fyjd/nIxccqheSZtri7jRTKXVW/4b2851409b71d18e1742c1fe1f8f01eb/20200428-av-policy-juul.ru.pdf" data-instant="">Политика проверки возраста</a></p>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <p>© 2020 YOOLS Labs, Inc. Все права защищены.</p>
+
+
+                    <p>ПРОДУКЦИЯ ИМЕЕТ ВОЗРАСТНЫЕ ОГРАНИЧЕНИЯ.<br> ПРОДАЖА НЕСОВЕРШЕННОЛЕТНИМ ЗАПРЕЩЕНА.</p>
+
+                    <p>Внимание: <br> Продукт содержит никотин, вызывающий привыкание.</p>
+
+                    <p>Защищено выпущенными и/или находящимися на одобрении <br>
+                        <a href="https://www.juul.ru/intellectual-property-list" data-instant="">патентами США и международными патентами</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;" src="./mission-value_files/saved_resource(1).html"></iframe>
+    <script>
+        function refreshConsent() {
+            window.addEventListener(
+                'CookiebotOnAccept',
+                function(e) {
+                    location.reload();
+                }
+            );
+            Cookiebot.renew();
+        }
+    </script>
+    <a hidden href="javascript:void(0)" onclick="refreshConsent()"><span class="intl-text" data-i18n-key="shared.footer.cookie_review">Cookie Settings</span></a>
+
+
+
+
+
+
+
+
+    <script>
+        window.gon = window.gon || {};
+        window.gon.taxonQuantityLimits = {
+            pods: 15,
+            devices: 2,
+            accessories: 20
+        }
+    </script>
+
+
+    <script src="./mission-value_files/runtime_application-bf358fddef6990426c6b.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/0-15c9ff28380c1d903a21.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/1-f7b00c4d44bd4665e596.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/2-7bf7d62e84a6e3bb0725.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/4-40aecef6852fd07cd796.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/3-9a65a1707a9b11af1fb6.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/5-27af2a649dfe8237940a.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/6-25836ac3611dd021e9ad.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/7-b43d7157bd0a923bb663.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/8-0277443e72261b363f01.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/9-2f3305c11616a611e0e7.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/10-73a60b0edfb349973efe.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/12-664f29047cc9dca35b05.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/13-55d7276b4d4b9ab9b207.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/15-4d79a85660f243dcb1af.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/16-0bc3e0fcb1c733299dcd.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/19-7e343ea242b6a78d697b.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/17-462f30c6d924b766984d.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/20-9658cf9c840cde4e9406.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/21-9dc92e5e77e0c0d601dc.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/22-3c47180fa235a7fecd16.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/25-fcad887e89376c1c4f8b.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/28-56cdd8ac4cc6b2108d6a.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/31-66af94db67f5014c4474.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/30-a469328b5b14f6acdf5c.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/32-9156aaa1ef0ec4ae2a3b.chunk.js.Без названия" rel="preload"></script>
+    <script src="./mission-value_files/application-591c19c14e8ee2a6cf30.chunk.js.Без названия" rel="preload"></script>
+
+
+
+    <div data-react-class="cart/wrapped/MembershipQueryParamCheck" data-react-props="{}"></div>
+    <div data-react-class="cart/wrapped/MembershipConflictModal" data-react-props="{}"></div>
+
+
+
+
+
+    <script src="./mission-value_files/2.0.0" type="module" defer="" integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
+
+
+
+    <div class="ReactModalPortal"></div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./mission-value_files/activityi.html"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./mission-value_files/activityi(1).html"></iframe>
+    <iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="./mission-value_files/bc.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
+    <script type="text/javascript" id="">
+        (function(a, e, f, g, b, c, d) {
+            a[b] = a[b] || function() {
+                (a[b].a = a[b].a || []).push(arguments)
+            };
+            a[b].l = 1 * new Date;
+            c = e.createElement(f);
+            d = e.getElementsByTagName(f)[0];
+            c.async = 1;
+            c.src = g;
+            d.parentNode.insertBefore(c, d)
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(55321003, "init", {
+            clickmap: !0,
+            trackLinks: !0,
+            accurateTrackBounce: !0,
+            webvisor: !0
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55321003" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div><iframe name="ym-native-frame" title="ym-native-frame" frameborder="0" aria-hidden="true" style="opacity: 0 !important; width: 0px !important; height: 0px !important; position: absolute !important; left: 100% !important; bottom: 100% !important; border: 0px !important;"
+        src="./mission-value_files/saved_resource(2).html"></iframe>
+    <ym-measure class="ym-viewport" style="display: block; top: 0px; right: 0px; bottom: 0px; left: 0px; height: 100vh; width: 100vw; position: fixed; transform: translate(0px, -100%); transform-origin: 0px 0px;"></ym-measure>
+    <ym-measure class="ym-zoom" style="bottom: 100%; position: fixed; width: 100vw;"></ym-measure>
+</body>
+
+</html>

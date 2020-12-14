@@ -1,7 +1,7 @@
 .logo {
     display: block;
-    margin: 0 auto;
-    height: 15%;
+    margin: auto;
+    width: 93vw;
 }
 
 body {
@@ -39,7 +39,7 @@ ul.menu li {
     background: #ff8e0d;
     width: 93vw;
     padding: 1vw;
-    margin: 1vw;
+    margin: 1.5vw;
     border: 0.5vw solid blue;
     border-radius: 1vw;
     border-style: ridge;

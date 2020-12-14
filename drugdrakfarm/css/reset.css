@@ -74,3 +74,24 @@ ul.menu li {
     padding-right: 1vw;
     padding-top: 1vw;
 }
+
+.sale {
+    display: block;
+    margin: auto;
+    width: 93vw;
+}
+
+p.text_s {
+    margin: 0%;
+    text-align: center;
+}
+
+.sales {
+    margin-bottom: 0%;
+}
+
+.worker {
+    float: right;
+    width: 30vw;
+    padding: 0.5vw;
+}

@@ -82,6 +82,7 @@ ul.menu li {
 }
 
 p.text_s {
+    font-size: 1.8vw;
     margin: 0%;
     text-align: center;
 }
@@ -90,8 +91,16 @@ p.text_s {
     margin-bottom: 0%;
 }
 
-.worker {
-    float: right;
-    width: 30vw;
-    padding: 0.5vw;
+.text_part {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.text_part_2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+a.partners:hover {
+    text-decoration: none;
 }
